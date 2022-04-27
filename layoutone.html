@@ -1,0 +1,96 @@
+<doctype html>
+    <html>
+        <head>
+    <title>Grid layout</title>
+    <!-- i decided on the color-->
+    <style>
+    
+    
+    @media screen and(max-width: 600px){
+         body{
+        background-color:rgb(85, 15, 248);
+      }
+    }
+    div{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer{
+        background-color:darkblue; 
+    }
+    .head-grid{
+        display: grid;
+    grid-template-columns: auto auto auto auto auto;
+        align-content:center;
+        height: 200px;
+        gap: 15px;
+        background-color: #0aafa7; /*i decided on the color scheme as cooler colors can make people more calm*/
+        padding: 10px;
+    }
+    .head-grid >div{
+        background-color: rgba(185, 206, 216, 0.8);
+        border: 1px solid rgba( 255, 255, 255, 0.8);
+        text-align:center;
+        padding: 20px 0;
+        font-size: 40px;
+    }
+
+    .grid-container { /*my color palette is rgb 79,65,248 - rgb 56,86,217 - rgb 74,149,240 - rgb 56,171,217 - rgb 65,244,248*/
+      display: grid;
+      grid-template-columns: auto auto auto ;
+      align-content: center;
+      
+      height: 500px;
+      gap: 10px;
+      background-color: #0dd8ce;
+      padding: 10px;
+    }
+    .grid-container > div {
+        background-color: rgba( 255, 255, 255, 0.8);
+        border: 1px solid rgba( 255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    .item1{
+        grid-column: 1/ span 3;
+    }
+    hr{
+        border: 10px solid blue; /*the main areas effected by the color scheme are the header, menu bar and the footer*/
+    }
+  
+    .item5{
+        grid-column:1/span 3;
+    }
+    </style>
+    </head>
+    
+    <body>
+        <h1>Grid Layout</h1>
+    
+        <p></p>
+        <div style="text-align:right; font-size:20px;"> Search</div>
+        <div class="head-grid">
+            <div>Updates</div>
+            <div>Attendees</div>
+            <div>Events</div>
+            <div>Planning</div> <!--the fonts i will use are mostly calibri (i coudln't get one for this in time) and the title will be consolas-->
+            <div>Help</div>
+            </div>
+    <hr>
+        <div class="grid-container">
+            <div class="item1"><img src="Hair_background copy.png" alt="placeholder" style="width:400px; height:150px;"> </div>
+            <div class="item2"><img src="Hair_background copy.png" alt="placeholder" style="width:200px; height:150px; "></div>
+            <div class="item3"><img src="Hair_background copy.png" alt="placeholder" style="width:200px; height:150px;"></div>
+            <div class="item4"><img src="Hair_background copy.png" alt="placeholder" style="width:200px; height:150px;"></div>
+            
+            
+            
+          
+          </div>
+    </body>
+    <footer>
+ <h1 style="text-align:left; color:darkgray;">quick links</h1>
+ <h2 style="text-align:right; color:darkgray;">placement text</h2>
+    </footer>
+      
+    </html>
